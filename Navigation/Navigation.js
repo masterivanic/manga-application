@@ -1,14 +1,27 @@
-import { createAppContainer, createStackNavigator } from 'react-navigation'
-// import { createStackNavigator, createAppContainer } from 'react-navigation-stack'
-import Search from '../Components/Search'
 
-const SearchStackNavigator = createStackNavigator({
-    Search: {
-        screen: Search,
-        navigationOptions: {
-            title: 'Rechercher'
-        }
-    }
-})
+// import Search from '../Components/Search'
+// import FilmDetail from '../Components/FilmDetail'
+// import { NavigationContainer } from '@react-navigation/native';
+//  import { createStackNavigator } from '@react-navigation/stack';
 
-export default createAppContainer(SearchStackNavigator)
+
+// const Stack = createStackNavigator();
+// const SearchStackNavigator = createStackNavigator({
+//     Search: {
+//         screen: Search,
+//         navigationOptions: {
+//             title: 'Rechercher'
+//         }
+//     },
+//     FilmDetail: {
+//         screen: FilmDetail
+//     }
+// })
+
+// <NavigationContainer>
+//  <Stack.Navigator>
+//        <Stack.Screen name="Rechercher" component={Search} />
+//  </Stack.Navigator>
+// </NavigationContainer>
+
+// export default createAppContainer(SearchStackNavigator)

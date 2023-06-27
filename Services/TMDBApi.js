@@ -10,3 +10,9 @@ export const getFilmsByApi = (text, page) => {
 export const getImageFromApi = (name) => {
     return 'https://image.tmdb.org/t/p/w300' + name
 }
+
+export const getFilmDetailFromApi = (id) => {
+    return fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=' + API_KEY + '&language=fr')
+        .then((response) => response.json())
+        .catch((error) => console.error(error));
+}
